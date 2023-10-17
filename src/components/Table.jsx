@@ -16,7 +16,8 @@ const FilteredTable = ({ data }) => {
 
   const handleFilterSubmit = (e) => {
     e.preventDefault();
-    // Filter the data based on the filter values
+
+    
     const filteredResult = data.filter((item) => {
       return (
         item.name.includes(filters.name) &&
