@@ -28,6 +28,11 @@ const FilteredTable = ({ data }) => {
   
       setFilteredData(filteredResult);
     };
+
+
+    const resetTable = () => {
+        setFilteredData(data)
+    }
   
     return (
       <div>
@@ -89,6 +94,10 @@ const FilteredTable = ({ data }) => {
           </label>
           <button type="submit">Submit</button>
         </form>
+
+        <br />
+        <button onClick={resetTable}>Reset</button>
+
         <Table data={filteredData} />
       </div>
     );
